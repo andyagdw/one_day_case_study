@@ -150,8 +150,8 @@ export default function Modal({
         setAddress(profile.address || "");
         setPostcode(profile.postcode || "");
       } else {
-        setName("John");
-        setEmail("Doe");
+        setName("John Doe");
+        setEmail("jdoe@email.com");
         setTelephoneNum("123456");
         setAddress("23 Highway Road");
         setPostcode("AB1 5ZY");

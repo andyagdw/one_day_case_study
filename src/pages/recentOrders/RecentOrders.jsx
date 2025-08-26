@@ -7,49 +7,9 @@ import { RECENT_ORDERS_KEY } from "../../utils/constants";
 import styles from "./RecentOrders.module.css";
 // Components
 import Modal from "../../components/modal/Modal";
+// Data
+import { DEFAULT_ORDERS } from "../../data/pizzas";
 
-const DEFAULT_ORDERS = [
-  {
-    id: 1,
-    name: "Pepperoni Feast",
-    size: "Large",
-    qty: 1,
-    total: 9.99,
-    date: "2025-08-20",
-  },
-  {
-    id: 2,
-    name: "Veggie Delight",
-    size: "Medium",
-    qty: 2,
-    total: 11.48,
-    date: "2025-08-14",
-  },
-  {
-    id: 3,
-    name: "BBQ Chicken",
-    size: "Small",
-    qty: 1,
-    total: 7.49,
-    date: "2025-07-30",
-  },
-  {
-    id: 4,
-    name: "Margherita",
-    size: "Large",
-    qty: 3,
-    total: 31.5,
-    date: "2025-06-18",
-  },
-  {
-    id: 5,
-    name: "Hawaiian",
-    size: "Medium",
-    qty: 1,
-    total: 10.4,
-    date: "2025-05-05",
-  },
-];
 
 export default function RecentOrders() {
   const [orders, setOrders] = useState([]);
@@ -98,10 +58,11 @@ export default function RecentOrders() {
                         <span className={styles.orderSize}>{order.size}</span>
                       </p>
                       <p>Quantity: {order.qty}</p>
-                      <p>Price: £{order.total}</p>
+                      {/* Ensures trailing zeros show */}
+                      <p>Price: £{order.total.toFixed(2)}</p>
                       <p>
                         Order date:{" "}
-                        <time dateTime={formatDate(order.date)}>
+                        <time>
                           {formatDate(order.date)}
                         </time>
                       </p>

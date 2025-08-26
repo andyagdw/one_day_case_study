@@ -29,3 +29,46 @@ export const PIZZAS = [
     prices: { Small: 6.5, Medium: 8.5, Large: 10.5 },
   },
 ];
+
+export const DEFAULT_ORDERS = [
+  {
+    id: 1,
+    name: "Pepperoni Feast",
+    size: "Large",
+    qty: 1,
+    total: 9.99,
+    date: "2025-08-20",
+  },
+  {
+    id: 2,
+    name: "Veggie Delight",
+    size: "Medium",
+    qty: 2,
+    total: 11.48,
+    date: "2025-08-14",
+  },
+  {
+    id: 3,
+    name: "BBQ Chicken",
+    size: "Small",
+    qty: 1,
+    total: 7.49,
+    date: "2025-07-30",
+  },
+  {
+    id: 4,
+    name: "Margherita",
+    size: "Large",
+    qty: 3,
+    total: 31.5,
+    date: "2025-06-18",
+  },
+  {
+    id: 5,
+    name: "Hawaiian",
+    size: "Medium",
+    qty: 1,
+    total: 10.4,
+    date: "2025-05-05",
+  },
+];

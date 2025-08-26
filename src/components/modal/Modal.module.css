@@ -1,6 +1,6 @@
 .dialog {
     padding: 1em;
-    background-color: rgb(243, 239, 239);
+    background-color: rgb(243 239 239 / 1);
     margin: auto;
     width: min(90%, 500px);
     border-radius: 1.5rem;
@@ -59,6 +59,7 @@ input {
 /* Step 2 */
 select {
     width: 100%;
+    padding: 0.2em;
 }
 
 .selectWrapper {
