@@ -9,7 +9,7 @@
 }
 
 .recentOrderWrapper {
-    background-color: rgb(234, 218, 218);
+    background-color: rgba(234 218 218 / 1);
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     display: block;
     line-height: 1.2;
     padding: 0.5em 1.5em;
-    color: #000;
+    color: var(--tertiary-clr);
     border-radius: 1rem;
     margin-inline: auto;
     font-size: 1.1rem;

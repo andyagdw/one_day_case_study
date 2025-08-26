@@ -13,7 +13,7 @@ export default function NotFound() {
       <main className={["padding-inline", styles.mainWrapper].join(" ")}>
         <div className={styles.wrapper}>
           <p>
-            Page not found. <Link to="/">Back to home?</Link>
+            Page not found. <Link to="/" replace>Back to home?</Link>
           </p>
         </div>
       </main>
