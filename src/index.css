@@ -30,25 +30,22 @@
 
 :root {
   --primary-clr: rgba(255 202 202 / 1);
+  --secondary-clr: rgb(244 243 238 / 1);
+  --tertiary-clr: rgb(0 0 0 / 1);
 }
 
 body {
-  background-color: #F4F3EE;
-}
-
-/* Sticky footer */
-#root {
-  height: 100%;
+  background-color: var(--secondary-clr);
 }
 
 button {
   cursor: pointer;
-  box-shadow: 1px 1px 2px #000;
-  color: #000;
+  box-shadow: 1px 1px 2px var(--tertiary-clr);
+  color: var(--tertiary-clr);
 }
 
 button:disabled {
-  background-color: rgb(188, 187, 187);
+  background-color: rgba(188 187 187 / 1);
 }
 
 input {
@@ -56,15 +53,20 @@ input {
 }
 
 select {
-  color: #000;
+  color: var(--tertiary-clr);
 }
 
 /* Sticky footer */
+#root {
+  height: 100%;
+}
+
 .wrapper {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+/* End Sticky footer */
 
 .pizza-background-img {
   background-image: url("./assets/pizza.jpg");
