@@ -28,7 +28,7 @@ export default function Modal({
   const [postcode, setPostcode] = useState("");
   const [step, setStep] = useState(1);
 
-  // Steps
+  // Represents the total number of steps to pay for a pizza
   const maxSteps = 3;
   const stepTitles = {
     1: "Review",
@@ -81,11 +81,11 @@ export default function Modal({
         return;
       }
     }
-    if (step < maxSteps) setStep(step + 1);
+    if (step < maxSteps) setStep(s => s + 1);
   };
 
   const handleBack = () => {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) setStep(s => s - 1);
   };
 
   const handleConfirm = (e) => {
@@ -149,6 +149,12 @@ export default function Modal({
         setTelephoneNum(profile.telephoneNum || "");
         setAddress(profile.address || "");
         setPostcode(profile.postcode || "");
+      } else {
+        setName("John");
+        setEmail("Doe");
+        setTelephoneNum("123456");
+        setAddress("23 Highway Road");
+        setPostcode("AB1 5ZY");
       }
     } catch (e) {
       console.error("Error loading from local storage", e);
@@ -200,7 +206,6 @@ export default function Modal({
             modalRef.current.close(); // Close modal
           }}
         >
-          {/* Close */}
         </button>
       </div>
       <form aria-label="confirm-details" onSubmit={handleConfirm}>
