@@ -1,0 +1,93 @@
+.dialog {
+    padding: 1em;
+    background-color: rgb(243, 239, 239);
+    margin: auto;
+    width: min(90%, 500px);
+    border-radius: 1.5rem;
+}
+
+.closeDialogBtn {
+    line-height: 1.5;
+    padding-inline: 0.8em;
+    display: block;
+    margin-inline-start: auto;
+    border-radius: 50%;
+
+    &::after {
+        content: '\2717';
+        font-size: 1.5rem;
+    }
+}
+
+.closeDialogBtnWrapper {
+    margin-block-end: 1.2em;
+}
+
+.stepHeading {
+    margin-block-end: 1em;
+}
+
+.navigateBtnWrapper {
+    display: flex;
+    justify-content: center;
+    padding-block: 1.5em;
+
+    & button {
+        line-height: 1.5;
+        padding-inline: 0.8em;
+    }
+
+    & button:last-child {
+        margin-inline-start: 0.5em;
+    }
+}
+
+/* Step 1 */
+input {
+    padding-inline-start: 0.2em;
+}
+
+.inputWrapper {
+    margin-block-end: 1em;
+
+    & > input {
+        width: 100%;
+        margin-block-start: 0.5em;
+    }
+}
+
+/* Step 2 */
+select {
+    width: 100%;
+}
+
+.selectWrapper {
+    margin-block-end: 1em;
+
+    & select {
+        margin-block-start: 0.2em;
+    }
+}
+
+/* Step 3 */
+.updatePaymentText {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+    color: rgba(0 0 255 / 1);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.confirmSection {
+    margin-block-start: 2em;
+    line-height: 1.6;
+}
+
+.button {
+    border-radius: 1.2rem;
+}
+
+.submitBtn {
+    background-color: var(--primary-clr);
+}

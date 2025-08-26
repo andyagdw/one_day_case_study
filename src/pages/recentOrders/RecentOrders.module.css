@@ -1,0 +1,39 @@
+.heading {
+    margin-block-end: 2em;
+}
+
+.recentOrdersWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1em;
+}
+
+.recentOrderWrapper {
+    background-color: rgb(234, 218, 218);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.pizzaInfo {
+    line-height: 1.5;
+    margin-block-end: 1.8em;
+    padding-inline: 0.5em;
+}
+
+.orderSize {
+    font-style: italic;
+}
+
+.reorderBtn {
+    display: block;
+    line-height: 1.2;
+    padding: 0.5em 1.5em;
+    color: #000;
+    border-radius: 1rem;
+    margin-inline: auto;
+    font-size: 1.1rem;
+}
+
+.btnWrapper {
+    padding-block: 1em;
+}

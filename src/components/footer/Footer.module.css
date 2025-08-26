@@ -1,0 +1,5 @@
+.footer {
+    padding-block: 1em 4em;
+    margin-block-start: 4em;
+    background-color: var(--primary-clr);;
+}
