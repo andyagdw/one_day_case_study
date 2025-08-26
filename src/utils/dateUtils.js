@@ -1,7 +1,7 @@
-const formatDate = (dateStr) => {
+const formatDate = dateStr => {
   try {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("en-gb");
+    return new Date(dateStr).toLocaleDateString("en-gb");
+    // return d.toLocaleDateString("en-gb");
   } catch {
     return dateStr;
   }
